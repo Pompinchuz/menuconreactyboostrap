@@ -1,0 +1,60 @@
+/* index.css */
+
+/* Asegura que el Navbar sea fijo en la parte superior */
+.navbar {
+  margin-bottom: 0; /* Elimina el margen inferior para que la barra de navegación quede fija en la parte superior */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* Asegura que esté encima de otros elementos */
+  width: 100%;
+  background-color: #007bff; /* Color de fondo del navbar */
+}
+
+/* Asegura que el contenido no quede debajo del navbar */
+.container {
+  padding-top: 80px; /* Relleno para dar espacio a la barra fija */
+}
+
+/* Ajustes de los enlaces en el Navbar */
+.nav-link {
+  margin-right: 15px; /* Espaciado entre los enlaces */
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: white; /* Asegura que el color de los enlaces sea blanco */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border-color: #646cff; /* Mejor visibilidad del icono de hamburguesa */
+}
+
+/* Dropdown */
+.navbar-nav .dropdown-menu {
+  background-color: #1a1a1a; /* Fondo oscuro */
+  border-radius: 5px;
+}
+
+.navbar-nav .dropdown-item {
+  color: #fff; /* Texto blanco */
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #646cff; /* Color al pasar el ratón */
+  color: #fff;
+}
+
+/* Mejora la apariencia en dispositivos pequeños */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: block; /* Cambia a bloque para dispositivos pequeños */
+    width: 100%;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    text-align: center; /* Centra los enlaces */
+    padding: 10px 0; /* Más espacio en los elementos del menú */
+  }
+}
